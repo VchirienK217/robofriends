@@ -1,0 +1,50 @@
+/* Move font files to src/assets/fonts/ directory */
+@font-face {
+  font-family: 'Red Seven';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Red Seven'),
+       url('../assets/fonts/RedSeven.woff') format('woff');
+  font-display: swap; /* Improves font loading performance */
+}
+
+/* Consider using CSS variables for theming */
+:root {
+  --primary-color: #0ccac4;
+  --font-heading: 'Red Seven', sans-serif;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 200;
+  color: var(--primary-color);
+  margin: 0 0 1rem;
+}
+
+/* For modern layout, consider adding these base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.tc {
+  text-align: center;
+  padding: 2rem;
+}
+
+.f1 {
+  font-size: 3rem; /* Consider using rem units for better scalability */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .f1 {
+    font-size: 2.5rem;
+  }
+}
