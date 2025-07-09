@@ -3,6 +3,7 @@ import CardList from '/src/components/CardList.jsx'
 import Scroll from '/src/components/Scroll.jsx'
 import SearchBox from '/src/components/SearchBox.jsx'
 import ErrorBoundry from '/src/components/ErrorBoundry.jsx'
+import Font from '/src/assets/Red Seven.woff'
 import './App.css'
 
 function App() {
