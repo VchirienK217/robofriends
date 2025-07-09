@@ -1,11 +1,9 @@
-/* Move font files to src/assets/fonts/ directory */
 @font-face {
   font-family: 'Red Seven';
+  src: url('./assets/RedSeven.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local('Red Seven'),
-       url('../assets/fonts/RedSeven.woff') format('woff');
-  font-display: swap; /* Improves font loading performance */
+  font-display: swap;
 }
 
 /* Consider using CSS variables for theming */
